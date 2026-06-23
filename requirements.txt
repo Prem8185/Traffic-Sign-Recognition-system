@@ -1,7 +1,6 @@
 streamlit
 google-generativeai
 tensorflow==2.19.0
-keras==3.10.0
-opencv-python-headless
 numpy
-Pillow
+opencv-python-headless
+pillow
