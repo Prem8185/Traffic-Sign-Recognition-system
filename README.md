@@ -21,7 +21,7 @@ The system recognizes traffic signs from uploaded images or camera input, genera
 
 ## 🌍 Live Demo
 
-🔗 **[Streamlit Application](https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/)**
+🔗 **[Streamlit Application](https://streamlit.app)**
 
 ---
 
@@ -69,6 +69,15 @@ Driver Assistance Recommendation
 
 ---
 
+## ⚡ Intelligent Prediction System & Fallback Mechanism
+
+The application uses a hybrid prediction pipeline to ensure high availability:
+
+1. **Primary Layer:** MobileNetV2 identifies the traffic sign, and the Google Gemini API generates the contextual meaning and real-time driver advice.
+2. **Fallback Layer:** If the Gemini API becomes unavailable (due to rate limits, network issues, or missing keys), the system automatically switches to a local fallback mechanism. It leverages native pretrained structural mappings (`class_names.py`) to provide uninterrupted traffic sign identification.
+
+---
+
 ## 📂 Project Structure
 
 ```text
@@ -91,7 +100,7 @@ Traffic-Sign-Recognition-System/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/Prem8185/Traffic-Sign-Recognition-System.git
+git clone https://github.com
 cd Traffic-Sign-Recognition-System
 ```
 
@@ -103,7 +112,7 @@ pip install -r requirements.txt
 
 ### 3. Configure Gemini API Keys
 
-Create a secrets file at `.streamlit/secrets.toml` and add your keys:
+Create a file at `.streamlit/secrets.toml` and add your keys:
 
 ```toml
 GEMINI_API_KEY_1="your_api_key"
@@ -133,203 +142,9 @@ streamlit run app.py
 
 **Prem Kumar**  
 B.Tech – Electronics and Communication Engineering (ECE)  
-Final Year Student  
 
 ---
 
 ## 📜 License
 
 This project is licensed under the MIT License.
-
-• Framework: TensorFlow / Keras
-
-• Transfer Learning Approach
-
-• Image Classification Model
-
-• Optimized for Traffic Sign Recognition
-
----
-
-## 📂 Dataset
-
-German Traffic Sign Recognition Benchmark (GTSRB)
-
-The dataset contains multiple traffic sign categories used for training and evaluating the classification model.
-
----
-
-## 🚀 System Workflow
-
-```text
-Traffic Sign Image
-        ↓
-Image Preprocessing
-        ↓
-MobileNetV2 Classification
-        ↓
-Traffic Sign Prediction
-        ↓
-Gemini AI Analysis
-        ↓
-Traffic Sign Meaning
-        ↓
-Driver Assistance Recommendation
-```
-
----
-
-## 📸 Supported Input Methods
-
-### Upload Image
-
-Upload JPG, JPEG, or PNG traffic sign images directly from your device.
-
-### Camera Input
-
-Capture traffic sign images using your device camera for instant recognition and analysis.
-
----
-
-## ⚡ Intelligent Prediction System
-
-The application uses a hybrid prediction pipeline:
-
-1. MobileNetV2 identifies the traffic sign.
-
-2. Gemini AI generates:
-   - Traffic Sign Name
-   - Sign Meaning
-   - Driver Advice
-
-3. If Gemini becomes unavailable, the application automatically switches to the MobileNetV2 fallback system which is trained on own to ensure uninterrupted predictions.
-
----
-
-## 💡 Applications
-
-• Driver Assistance Systems
-
-• Smart Transportation Systems
-
-• Autonomous Vehicles
-
-• Traffic Monitoring Solutions
-
-• Road Safety Applications
-
-• Intelligent Transportation Systems (ITS)
-
----
-
-## 📁 Project Structure
-
-```text
-Traffic-Sign-Recognition-System
-
-├── app.py
-├── class_names.py
-├── requirements.txt
-├── runtime.txt
-├── .gitignore
-└── models
-    └── traffic_sign.keras
-```
-
----
-
-## ⚙️ Installation & Local Setup
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/Prem8185/Traffic-Sign-Recognition-System.git
-```
-
-### 2️⃣ Navigate to the Project Folder
-
-```bash
-cd Traffic-Sign-Recognition-System
-```
-
-### 3️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4️⃣ Configure Gemini API Keys
-
-Create a `.streamlit/secrets.toml` file and add:
-
-```toml
-GEMINI_API_KEY_1 = "your_api_key"
-GEMINI_API_KEY_2 = "your_api_key"
-GEMINI_API_KEY_3 = "your_api_key"
-```
-
-### 5️⃣ Run the Application
-
-```bash
-streamlit run app.py
-```
-
-### 6️⃣ Open in Browser
-
-```text
-http://localhost:8501
-```
-
-The application will launch locally and be ready for traffic sign detection and driver assistance analysis.
-
----
-
-## 👨‍💻 Developer
-
-**Prem Kumar**
-
-B.Tech – Electronics and Communication Engineering (ECE)
-
----
-
-🚗 Applications
-
-- Driver Assistance Systems
-- Autonomous Vehicles
-- Smart Transportation Systems
-- Road Safety Monitoring
-- Traffic Sign Recognition
-
----
-
-🔄 Project Workflow
-
-## 🚀 How It Works
-
-```text
-Traffic Sign Image
-        ↓
-Image Preprocessing
-        ↓
-MobileNetV2 Classification
-        ↓
-Traffic Sign Prediction
-        ↓
-Gemini AI Analysis
-        ↓
-Traffic Sign Meaning
-        ↓
-Driver Assistance Recommendation
-```
-
----
-
-📈 Future Enhancements
-
-- Real-Time Video Detection
-- Object Detection Integration
-- Multi-Language Support
-- Dashboard Analytics
-- Advanced Driver Assistance Features
-
----
