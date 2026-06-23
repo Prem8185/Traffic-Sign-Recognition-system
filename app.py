@@ -173,7 +173,7 @@ st.markdown(
 )
 
 st.markdown(
-    '<div class="sub-title">Traffic Sign Detection using MobileNetV2 + Gemini Model</div>',
+    '<div class="sub-title">Traffic Sign Recognition using MobileNetV2 and Driver Assistance</div>',
     unsafe_allow_html=True
 )
 
