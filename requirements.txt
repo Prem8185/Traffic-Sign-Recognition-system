@@ -1,0 +1,7 @@
+streamlit
+google-generativeai
+tensorflow
+numpy
+opencv-python-headless
+Pillow
+protobuf==6.31.1

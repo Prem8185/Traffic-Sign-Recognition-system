@@ -1,0 +1,10 @@
+dataset/
+__pycache__/
+
+test_*.py
+train_*.py
+evaluation_model.py
+
+.streamlit/secrets.toml
+
+*.pyc
