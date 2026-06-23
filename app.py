@@ -38,7 +38,6 @@ def gemini_prediction(prompt, image):
     models = [
         "gemini-3.1-flash-lite",
         "gemini-2.5-flash",
-        "gemini-3.5-flash"
     ]
 
     last_error = None
@@ -178,17 +177,20 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
 # ==========================
 # IMAGE SOURCE
 # ==========================
 
-tab1, tab2 = st.tabs(
-    ["📁 Upload Image", "📸 Use Camera"]
+source = st.radio(
+    "Select Image Source",
+    ["📁 Upload Image", "📸 Use Camera"],
+    horizontal=True
 )
 
 image = None
 
-with tab1:
+if source == "📁 Upload Image":
 
     uploaded_file = st.file_uploader(
         "Upload Traffic Sign",
@@ -197,8 +199,9 @@ with tab1:
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
+        image = image.resize((224, 224))
 
-with tab2:
+elif source == "📸 Use Camera":
 
     camera_file = st.camera_input(
         "Capture Traffic Sign"
@@ -206,14 +209,7 @@ with tab2:
 
     if camera_file is not None:
         image = Image.open(camera_file)
-
-# ==========================
-# PREDICTION
-# ==========================
-
-# ==========================
-# PREDICTION
-# ==========================
+        image = image.resize((224, 224))
 
 # ==========================
 # PREDICTION
