@@ -1,163 +1,77 @@
 🚦 Traffic Sign Recognition and Driver Assistance System
 
-📌 Overview
+A Deep Learning-based Traffic Sign Recognition System using MobileNetV2 for traffic sign classification and intelligent driver assistance.
 
-The Traffic Sign Recognition and Driver Assistance System is an AI-powered web application that detects and identifies traffic signs from images captured through a camera or uploaded by a user.
+Features
 
-The system combines a deep learning model based on MobileNetV2 with advanced AI-powered traffic sign interpretation to provide:
+* Traffic sign detection from uploaded images
+* Traffic sign detection using camera capture
+* MobileNetV2-based image classification
+* Traffic sign meaning generation
+* Driver assistance recommendations
+* Streamlit web application
+* Real-time traffic sign analysis
+* Cloud deployment using Streamlit
 
-- Traffic Sign Identification
-- Sign Meaning Explanation
-- Driver Assistance Recommendations
+Live Demo
 
-The application is deployed using Streamlit and designed to support intelligent transportation and driver awareness systems.
+Web App:
 
----
+https://traffic-sign-recognition-system-hmsz2cvcgsz9zyylyzupvx.streamlit.app/
 
-🎯 Features
+Technologies Used
 
-- Upload traffic sign images
-- Capture traffic signs using a camera
-- Automatic traffic sign recognition
-- Real-time sign classification
-- Driver assistance recommendations
-- MobileNetV2-based fallback prediction system
-- User-friendly web interface
-- Cloud deployment using Streamlit
+* Python
+* TensorFlow
+* Keras
+* MobileNetV2
+* OpenCV
+* NumPy
+* Pillow
+* Streamlit
+* Google Gemini API
 
----
+Model
 
-🧠 Technologies Used
+* MobileNetV2
+* Transfer Learning
+* Image Classification
+* Traffic Sign Recognition
 
-Programming Language
-
-- Python
-
-Deep Learning
-
-- TensorFlow
-- Keras
-- MobileNetV2
-
-Computer Vision
-
-- OpenCV
-- Pillow
-
-AI Integration
-
-- Google Gemini API
-
-Web Application
-
-- Streamlit
-
-Deployment
-
-- Streamlit Community Cloud
-
----
-
-🏗 Project Architecture
-
-Traffic Sign Image
-
-↓
-
-Image Preprocessing
-
-↓
-
-MobileNetV2 Classification Model
-
-↓
-
-Traffic Sign Prediction
-
-↓
-
-AI-Based Interpretation
-
-↓
-
-Meaning Generation
-
-↓
-
-Driver Assistance Recommendation
-
----
-
-📂 Project Structure
+Project Structure
 
 Traffic-Sign-Recognition-System/
-│
+
 ├── app.py
 ├── class_names.py
 ├── requirements.txt
 ├── runtime.txt
 ├── models/
 │   └── traffic_sign.keras
-│
 └── README.md
 
-🚀 How to Run Locally
-
-Clone Repository
+How to Run
 
 git clone https://github.com/Prem8185/Traffic-Sign-Recognition-system.git
 
-Open Project
-
 cd Traffic-Sign-Recognition-system
-
-Install Dependencies
 
 pip install -r requirements.txt
 
-Run Application
-
 streamlit run app.py
 
----
+Applications
 
-📸 Application Capabilities
+* Driver Assistance Systems
+* Intelligent Transportation Systems
+* Smart Vehicles
+* Road Safety Applications
+* Traffic Monitoring Systems
 
-- Detect traffic signs from uploaded images
-- Detect traffic signs from camera captures
-- Display traffic sign name
-- Explain traffic sign meaning
-- Provide driver guidance
-
----
-
-🎓 Learning Outcomes
-
-Through this project, I gained practical experience in:
-
-- Deep Learning
-- Computer Vision
-- CNN-Based Image Classification
-- MobileNetV2 Architecture
-- AI Integration
-- Streamlit Deployment
-- Model Deployment on Cloud Platforms
-- Driver Assistance Applications
-
----
-
-👨‍💻 Developer
+Developer
 
 Prem Kumar
 
-Final Year B.Tech (ECE)
+B.Tech (ECE)
 
----
-
-⭐ Future Enhancements
-
-- Real-time video traffic sign detection
-- Lane detection integration
-- Object detection for vehicles and pedestrians
-- Voice-based driver alerts
-- Advanced Driver Assistance System (ADAS) features
+Machine Learning & AI Enthusiast
