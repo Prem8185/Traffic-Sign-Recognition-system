@@ -1,8 +1,8 @@
 # 🚦 Traffic Sign Recognition and Driver Assistance System
 
-A Deep Learning-based Traffic Sign Recognition System developed using MobileNetV2, TensorFlow, Streamlit, and Google Gemini AI.
+A Deep Learning-based Traffic Sign Recognition and Driver Assistance System developed using MobileNetV2, TensorFlow, Streamlit, and Google Gemini AI.
 
-The system detects and classifies traffic signs from uploaded images or camera input, provides the meaning of the detected sign, and generates driver assistance recommendations to improve road safety and awareness.
+The system recognizes traffic signs from uploaded images or camera input, generates meaningful explanations of detected signs, and provides driver assistance recommendations to support safer and more informed driving decisions.
 
 ---
 
@@ -10,25 +10,19 @@ The system detects and classifies traffic signs from uploaded images or camera i
 
 • Traffic Sign Recognition using MobileNetV2
 
-• Image Upload Support
-
-• Camera Capture Support
+• Upload Image and Camera Input Support
 
 • Real-Time Traffic Sign Analysis
 
-• AI-Powered Traffic Sign Explanation
+• AI-Based Traffic Sign Meaning Generation
 
 • Driver Assistance Recommendations
 
-• Automatic Traffic Sign Meaning Generation
+• Streamlit Web Interface
 
-• Multiple Gemini API Failover System
+• MobileNetV2 Fallback System
 
-• MobileNetV2 Backup Prediction System
-
-• Cloud Deployment using Streamlit
-
-• Interactive and User-Friendly Interface
+• Cloud Deployment
 
 ---
 
@@ -36,7 +30,7 @@ The system detects and classifies traffic signs from uploaded images or camera i
 
 🔗 Streamlit Application
 
-https://traffic-sign-recognition-system-hmsz2cvcgsz9zyylyzupvx.streamlit.app/
+https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/
 
 ---
 
@@ -55,8 +49,6 @@ https://traffic-sign-recognition-system-hmsz2cvcgsz9zyylyzupvx.streamlit.app/
 • OpenCV
 
 • NumPy
-
-• Pillow
 
 • Google Gemini API
 
@@ -214,13 +206,5 @@ Driver Assistance Recommendation
 - Multi-Language Support
 - Dashboard Analytics
 - Advanced Driver Assistance Features
-
----
-
-👨‍💻 Developer
-
-Prem Kumar
-
-B.Tech – Electronics and Communication Engineering (ECE)
 
 ---
