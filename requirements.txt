@@ -1,7 +1,7 @@
 streamlit
 google-generativeai
-tensorflow
-numpy
+tensorflow==2.19.0
+keras==3.10.0
 opencv-python-headless
+numpy
 Pillow
-protobuf==6.31.1
