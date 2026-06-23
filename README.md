@@ -42,8 +42,6 @@ https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/
 
 • Keras
 
-• MobileNetV2
-
 • Streamlit
 
 • OpenCV
@@ -121,7 +119,7 @@ The application uses a hybrid prediction pipeline:
    - Sign Meaning
    - Driver Advice
 
-3. If Gemini becomes unavailable, the application automatically switches to the MobileNetV2 fallback system to ensure uninterrupted predictions.
+3. If Gemini becomes unavailable, the application automatically switches to the MobileNetV2 fallback system which is trained on own to ensure uninterrupted predictions.
 
 ---
 
@@ -157,19 +155,57 @@ Traffic-Sign-Recognition-System
 
 ---
 
+## ⚙️ Installation & Local Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Prem8185/Traffic-Sign-Recognition-System.git
+```
+
+### 2️⃣ Navigate to the Project Folder
+
+```bash
+cd Traffic-Sign-Recognition-System
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Configure Gemini API Keys
+
+Create a `.streamlit/secrets.toml` file and add:
+
+```toml
+GEMINI_API_KEY_1 = "your_api_key"
+GEMINI_API_KEY_2 = "your_api_key"
+GEMINI_API_KEY_3 = "your_api_key"
+```
+
+### 5️⃣ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+### 6️⃣ Open in Browser
+
+```text
+http://localhost:8501
+```
+
+The application will launch locally and be ready for traffic sign detection and driver assistance analysis.
+
+---
+
 ## 👨‍💻 Developer
 
 **Prem Kumar**
 
 B.Tech – Electronics and Communication Engineering (ECE)
-
-Machine Learning | Deep Learning | Artificial Intelligence
-
----
-
-## 📜 License
-
-This project is intended for educational, research, and learning purposes.German Traffic Sign Recognition Benchmark (GTSRB)
 
 ---
 
@@ -185,17 +221,23 @@ This project is intended for educational, research, and learning purposes.German
 
 🔄 Project Workflow
 
+## 🚀 How It Works
+
+```text
 Traffic Sign Image
         ↓
 Image Preprocessing
         ↓
-MobileNetV2 Model
+MobileNetV2 Classification
         ↓
-Traffic Sign Recognition
+Traffic Sign Prediction
         ↓
-Meaning Generation
+Gemini AI Analysis
+        ↓
+Traffic Sign Meaning
         ↓
 Driver Assistance Recommendation
+```
 
 ---
 
