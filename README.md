@@ -1,77 +1,98 @@
 🚦 Traffic Sign Recognition and Driver Assistance System
 
-A Deep Learning-based Traffic Sign Recognition System using MobileNetV2 for traffic sign classification and intelligent driver assistance.
+A Deep Learning-based Traffic Sign Recognition System that identifies traffic signs from images and provides driver assistance recommendations using MobileNetV2 and AI-powered analysis.
 
-Features
+---
 
-* Traffic sign detection from uploaded images
-* Traffic sign detection using camera capture
-* MobileNetV2-based image classification
-* Traffic sign meaning generation
-* Driver assistance recommendations
-* Streamlit web application
-* Real-time traffic sign analysis
-* Cloud deployment using Streamlit
+🔗 Live Demo
 
-Live Demo
-
-Web App:
+Web Application:
 
 https://traffic-sign-recognition-system-hmsz2cvcgsz9zyylyzupvx.streamlit.app/
 
-Technologies Used
+---
 
-* Python
-* TensorFlow
-* Keras
-* MobileNetV2
-* OpenCV
-* NumPy
-* Pillow
-* Streamlit
-* Google Gemini API
+✨ Features
 
-Model
+- 📁 Upload Traffic Sign Images
+- 📸 Camera-Based Traffic Sign Detection
+- 🧠 MobileNetV2 Deep Learning Model
+- 🚗 Driver Assistance Recommendations
+- ⚡ Real-Time Image Analysis
+- 🌐 Streamlit Web Application
+- ☁️ Cloud Deployment Support
 
-* MobileNetV2
-* Transfer Learning
-* Image Classification
-* Traffic Sign Recognition
+---
 
-Project Structure
+🛠 Technologies Used
 
-Traffic-Sign-Recognition-System/
+- Python
+- TensorFlow
+- Keras
+- MobileNetV2
+- OpenCV
+- NumPy
+- Pillow
+- Streamlit
+- Google Gemini API
 
-├── app.py
-├── class_names.py
-├── requirements.txt
-├── runtime.txt
-├── models/
-│   └── traffic_sign.keras
-└── README.md
+---
 
-How to Run
+🧠 Model Architecture
 
-git clone https://github.com/Prem8185/Traffic-Sign-Recognition-system.git
+- MobileNetV2
+- Transfer Learning
+- Deep Learning Classification
+- Image Processing Pipeline
 
-cd Traffic-Sign-Recognition-system
+---
 
-pip install -r requirements.txt
+📂 Dataset
 
-streamlit run app.py
+German Traffic Sign Recognition Benchmark (GTSRB)
 
-Applications
+---
 
-* Driver Assistance Systems
-* Intelligent Transportation Systems
-* Smart Vehicles
-* Road Safety Applications
-* Traffic Monitoring Systems
+🚗 Applications
 
-Developer
+- Driver Assistance Systems
+- Autonomous Vehicles
+- Smart Transportation Systems
+- Road Safety Monitoring
+- Traffic Sign Recognition
+
+---
+
+🔄 Project Workflow
+
+Traffic Sign Image
+        ↓
+Image Preprocessing
+        ↓
+MobileNetV2 Model
+        ↓
+Traffic Sign Recognition
+        ↓
+Meaning Generation
+        ↓
+Driver Assistance Recommendation
+
+---
+
+📈 Future Enhancements
+
+- Real-Time Video Detection
+- Object Detection Integration
+- Multi-Language Support
+- Dashboard Analytics
+- Advanced Driver Assistance Features
+
+---
+
+👨‍💻 Developer
 
 Prem Kumar
 
-B.Tech (ECE)
+B.Tech – Electronics and Communication Engineering (ECE)
 
-Machine Learning & AI Enthusiast
+---
