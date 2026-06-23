@@ -21,7 +21,7 @@ The system recognizes traffic signs from uploaded images or camera input, genera
 
 ## 🌍 Live Demo
 
-🔗 **[Live Demo](https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/)
+🔗 **[App Link](https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/) - click here to view the app
 **
 
 ---
