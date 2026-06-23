@@ -1,6 +1,6 @@
 # 🚦 Traffic Sign Recognition and Driver Assistance System
 
-A Deep Learning-based Traffic Sign Recognition and Driver Assistance System developed using MobileNetV2, TensorFlow, Streamlit, and Google Gemini AI.
+A Machine Learning-based Traffic Sign Recognition and Driver Assistance System developed using MobileNetV2, TensorFlow, Google Gemini AI and Streamlit.
 
 The system recognizes traffic signs from uploaded images or camera input, generates meaningful explanations of detected signs, and provides driver assistance recommendations to support safer and more informed driving decisions.
 
@@ -10,10 +10,8 @@ The system recognizes traffic signs from uploaded images or camera input, genera
 
 * Traffic Sign Recognition using MobileNetV2
 * Upload Image and Camera Input Support
-* Real-Time Traffic Sign Analysis
-* AI-Based Traffic Sign Meaning Generation
+* Real-Time Traffic Sign Analysis & Meaning Generation
 * Driver Assistance Recommendations
-* Streamlit Web Interface
 * MobileNetV2 Fallback Prediction System
 * Cloud Deployment Support
 
@@ -21,8 +19,7 @@ The system recognizes traffic signs from uploaded images or camera input, genera
 
 ## 🌍 Live Demo
 
-🔗 **[App Link](https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/) - click here to view the app
-**
+🔗 * [App Link](https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/) - click here to view the app *
 
 ---
 
@@ -35,7 +32,6 @@ The system recognizes traffic signs from uploaded images or camera input, genera
 * Streamlit
 * OpenCV
 * NumPy
-* Pillow
 * Google Gemini API
 * GitHub
 
@@ -75,11 +71,80 @@ Driver Assistance Recommendation
 The application uses a hybrid prediction pipeline to ensure high availability:
 
 1. **Primary Layer:** MobileNetV2 identifies the traffic sign, and the Google Gemini API generates the contextual meaning and real-time driver advice.
-2. **Fallback Layer:** If the Gemini API becomes unavailable (due to rate limits, network issues, or missing keys), the system automatically switches to a local fallback mechanism. It leverages native pretrained structural mappings (`class_names.py`) to provide uninterrupted traffic sign identification.
+2. **Fallback Layer:** If the Gemini API becomes unavailable (due to rate limits, network issues, or missing keys), the system automatically switches to a local fallback pretrained mechanism. It leverages native pretrained structural mappings (`class_names.py`) to provide uninterrupted traffic sign identification.
 
 ---
 
 ## 📂 Project Structure
+
+```text
+Traffic-Sign-Recognition-System/
+├── .streamlit/
+│   └── secrets.toml
+├── models/
+│   └── traffic_sign.keras
+├── app.py
+├── class_names.py
+├── requirements.txt
+├── runtime.txt
+└── .gitignore
+```
+
+---
+
+## ⚙️ Installation & Local Setup
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com
+cd Traffic-Sign-Recognition-System
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure Gemini API Keys
+
+Create a file at `.streamlit/secrets.toml` and add your keys:
+
+```toml
+GEMINI_API_KEY_1="your_api_key"
+GEMINI_API_KEY_2="your_api_key"
+GEMINI_API_KEY_3="your_api_key"
+```
+
+### 4. Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 💡 Applications
+
+* Driver Assistance Systems
+* Intelligent Transportation Systems
+* Smart Traffic Monitoring
+* Road Safety Solutions
+* Autonomous Vehicle Research
+
+---
+
+## 👨‍💻 Developer
+
+**Prem Kumar**  
+B.Tech – Electronics and Communication Engineering (ECE)  
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
 
 ```text
 Traffic-Sign-Recognition-System/
