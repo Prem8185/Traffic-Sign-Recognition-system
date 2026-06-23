@@ -8,55 +8,138 @@ The system recognizes traffic signs from uploaded images or camera input, genera
 
 ## 📌 Features
 
-• Traffic Sign Recognition using MobileNetV2
-
-• Upload Image and Camera Input Support
-
-• Real-Time Traffic Sign Analysis
-
-• AI-Based Traffic Sign Meaning Generation
-
-• Driver Assistance Recommendations
-
-• Streamlit Web Interface
-
-• MobileNetV2 Fallback System
-
-• Cloud Deployment
+* Traffic Sign Recognition using MobileNetV2
+* Upload Image and Camera Input Support
+* Real-Time Traffic Sign Analysis
+* AI-Based Traffic Sign Meaning Generation
+* Driver Assistance Recommendations
+* Streamlit Web Interface
+* MobileNetV2 Fallback Prediction System
+* Cloud Deployment Support
 
 ---
 
 ## 🌍 Live Demo
 
-🔗 Streamlit Application
-
-https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/
+🔗 **[Streamlit Application](https://traffic-sign-recognition-system-vaph4odonftkerb48xxqjh.streamlit.app/)**
 
 ---
 
 ## 🛠️ Technologies Used
 
-• Python
-
-• TensorFlow
-
-• Keras
-
-• Streamlit
-
-• OpenCV
-
-• NumPy
-
-• Google Gemini API
-
-• GitHub
+* Python
+* TensorFlow
+* Keras
+* MobileNetV2
+* Streamlit
+* OpenCV
+* NumPy
+* Pillow
+* Google Gemini API
+* GitHub
 
 ---
 
 ## 🧠 Deep Learning Model
 
-• Model Architecture: MobileNetV2
+* Model Architecture: MobileNetV2
+* Framework: TensorFlow / Keras
+* Dataset: German Traffic Sign Recognition Benchmark (GTSRB)
+* Task: Traffic Sign Classification
+
+---
+
+## 🚀 System Workflow
+
+```text
+Traffic Sign Image
+        ↓
+Image Preprocessing
+        ↓
+MobileNetV2 Classification
+        ↓
+Traffic Sign Prediction
+        ↓
+Gemini AI Analysis
+        ↓
+Traffic Sign Meaning
+        ↓
+Driver Assistance Recommendation
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+Traffic-Sign-Recognition-System/
+├── .streamlit/
+│   └── secrets.toml
+├── models/
+│   └── traffic_sign.keras
+├── app.py
+├── class_names.py
+├── requirements.txt
+├── runtime.txt
+└── .gitignore
+```
+
+---
+
+## ⚙️ Installation & Local Setup
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Prem8185/Traffic-Sign-Recognition-System.git
+cd Traffic-Sign-Recognition-System
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure Gemini API Keys
+
+Create a secrets file at `.streamlit/secrets.toml` and add your keys:
+
+```toml
+GEMINI_API_KEY_1="your_api_key"
+GEMINI_API_KEY_2="your_api_key"
+GEMINI_API_KEY_3="your_api_key"
+```
+
+### 4. Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 💡 Applications
+
+* Driver Assistance Systems
+* Intelligent Transportation Systems
+* Smart Traffic Monitoring
+* Road Safety Solutions
+* Autonomous Vehicle Research
+
+---
+
+## 👨‍💻 Developer
+
+**Prem Kumar**  
+B.Tech – Electronics and Communication Engineering (ECE)  
+Final Year Student  
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
 
 • Framework: TensorFlow / Keras
 
